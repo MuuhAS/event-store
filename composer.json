@@ -1,55 +1,55 @@
 {
-  "name": "prooph/event-store",
-  "type": "library",
-  "license": "BSD-3-Clause",
-  "authors": [
-    {
-      "name": "Sascha-Oliver Prolic",
-      "email": "saschaprolic@googlemail.com"
-    }
-  ],
-  "description": "Event Store v8",
-  "keywords": [
-    "EventStore",
-    "EventSourcing",
-    "DDD",
-    "prooph"
-  ],
-  "prefer-stable": true,
-  "require": {
-    "php": "^7.4",
-    "ext-json": "*",
-    "ramsey/uuid": "^3.9.3"
-  },
-  "require-dev": {
-    "amphp/amp": "^2.4.4",
-    "doctrine/instantiator": "^1.3",
-    "php-coveralls/php-coveralls": "^2.2",
-    "phpspec/prophecy": "^1.10.3",
-    "phpunit/phpunit": "^9.1",
-    "prooph/php-cs-fixer-config": "^0.3.1",
-    "vimeo/psalm": "^3.11.2"
-  },
-  "autoload": {
-    "psr-4": {
-      "Prooph\\EventStore\\": "src/"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "ProophTest\\EventStore\\": "tests/"
-    }
-  },
-  "scripts": {
-    "check": [
-      "@cs",
-      "@test"
-    ],
-    "cs": "php-cs-fixer fix -v --diff --dry-run",
-    "cs-fix": "php-cs-fixer fix -v --diff",
-    "test": "phpunit"
-  },
-  "config": {
-    "sort-packages": true
-  }
+	"name": "muuhas/event-store",
+	"type": "library",
+	"license": "BSD-3-Clause",
+	"authors": [
+		{
+			"name": "Sascha-Oliver Prolic",
+			"email": "saschaprolic@googlemail.com"
+		}
+	],
+	"description": "Event Store v8",
+	"keywords": [
+		"EventStore",
+		"EventSourcing",
+		"DDD",
+		"prooph"
+	],
+	"prefer-stable": true,
+	"require": {
+		"php": "^7.4",
+		"ext-json": "*",
+		"ramsey/uuid": "^4.0"
+	},
+	"require-dev": {
+		"amphp/amp": "^2.4.4",
+		"doctrine/instantiator": "^1.3",
+		"php-coveralls/php-coveralls": "^2.2",
+		"phpspec/prophecy": "^1.10.3",
+		"phpunit/phpunit": "^9.1",
+		"prooph/php-cs-fixer-config": "^0.3.1",
+		"vimeo/psalm": "^3.11.2"
+	},
+	"autoload": {
+		"psr-4": {
+			"Prooph\\EventStore\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"ProophTest\\EventStore\\": "tests/"
+		}
+	},
+	"scripts": {
+		"check": [
+			"@cs",
+			"@test"
+		],
+		"cs": "php-cs-fixer fix -v --diff --dry-run",
+		"cs-fix": "php-cs-fixer fix -v --diff",
+		"test": "phpunit"
+	},
+	"config": {
+		"sort-packages": true
+	}
 }
